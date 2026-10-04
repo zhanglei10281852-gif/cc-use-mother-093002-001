@@ -1,1 +1,55 @@
-"""国际中文联合培养履约协同领域包。"""
+"""国际中文联合培养履约协同服务。"""
+from .contracts import AgreementVersion, ObligationRecord
+from .domain import (
+    Activity,
+    AgreementVersionView,
+    AmendmentImpact,
+    Clause,
+    ClauseCategory,
+    ClauseDisposition,
+    Clock,
+    ConcurrencyError,
+    Dispute,
+    DisputeResolution,
+    DomainError,
+    Evidence,
+    FixedClock,
+    Fulfillment,
+    FulfillmentState,
+    Party,
+    PartyRole,
+    Signature,
+    SystemClock,
+    VersionState,
+)
+from .events import Event
+from .service import CollaborationService
+from .store import EventStore
+
+__all__ = [
+    "AgreementVersion",
+    "ObligationRecord",
+    "Activity",
+    "AgreementVersionView",
+    "AmendmentImpact",
+    "Clause",
+    "ClauseCategory",
+    "ClauseDisposition",
+    "Clock",
+    "CollaborationService",
+    "ConcurrencyError",
+    "Dispute",
+    "DisputeResolution",
+    "DomainError",
+    "Evidence",
+    "Event",
+    "EventStore",
+    "FixedClock",
+    "Fulfillment",
+    "FulfillmentState",
+    "Party",
+    "PartyRole",
+    "Signature",
+    "SystemClock",
+    "VersionState",
+]
